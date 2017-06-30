@@ -26,7 +26,7 @@ namespace Project_1
 
             //trying to get a "help" response to be accepted, regardless of case. thanks, pete!!!
 
-            Console.WriteLine("User, what is your favorite roygbiv color? if you don't know what roygbiv is, please type \"help\"");
+            Console.WriteLine("User, what is your favorite ROYGBIV color? If you don't know what ROYGBIV is, please type \"help\"");
             string userFavoriteColor = Console.ReadLine();
             string helpLower = userFavoriteColor.ToLower();
 
@@ -53,16 +53,15 @@ namespace Project_1
 
             //Part 2 Formatting. Taking user information from Part 1 to complete the following:
 
-            //if (int userAge % 0) ;
+            if (userAge % 2 == 0) 
 
-            //{
-            //    string userRetiresIn = "31 years";
-            //}
-            
-            //else
-            //{
-            //    string userRetiresIn = "30 years";
-            //}
+            {
+                string userRetiresIn = "30 years";
+            }
+            else
+            {
+                string userRetiresIn = "31 years";
+            }
 
             //siblings functions
             if (userSiblings == 0)
@@ -85,7 +84,7 @@ namespace Project_1
                 string userVacationHome = "Costa Rica";
             }
 
-            else if (userSiblings >3)
+            else if (userSiblings > 3)
             {
                 string userVacationHome = "Orlando";
             }
@@ -94,6 +93,46 @@ namespace Project_1
             {
                 string userVacationHome = "Skid Row";
             }
+
+
+            if (userFavoriteColor == "Royal")
+            {
+                string userTransportation = "Ford Focus";
+            }
+
+            else if (userFavoriteColor == "Orange")
+            {
+                string userTransportation = "Chevy Cavalier";
+            }
+
+            else if (userFavoriteColor == "Yellow")
+            {
+                string userTransportation = "Buick Century";
+            }
+
+            else if (userFavoriteColor == "Green")
+            {
+                string userTransportation = "Chevy Trax";
+            }
+
+            else if (userFavoriteColor == "Blue")
+            {
+                string userTransportation = "Land Rover Discovery";
+            }
+
+            else if (userFavoriteColor == "Indigo")
+            {
+                string userTransportation = "VW Tiguan";
+            }
+
+            else
+            {
+                string userTransportation = "Kia Sportage";
+            }
+
+
+
+        
 
         }
     }
