@@ -21,12 +21,12 @@ namespace Project_1
             Console.WriteLine("User, please enter your age as a whole number.");
             int userAge = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("User, please enter your birth month as the corresponding digit. ex; January=1; May=5; October=10");
+            Console.WriteLine("User, please enter your birth month as the corresponding digit. ex; january=1; may=5; october=10");
             int userBirthMonth = int.Parse(Console.ReadLine());
 
-            //Trying to get a "Help" response to be accepted, regardless of case. THANKS, PETE!!!
-           
-            Console.WriteLine("User, what is your favorite ROYGBIV color? If you don't know what ROYGBIV is, please type \"Help\"");
+            //trying to get a "help" response to be accepted, regardless of case. thanks, pete!!!
+
+            Console.WriteLine("User, what is your favorite roygbiv color? if you don't know what roygbiv is, please type \"help\"");
             string userFavoriteColor = Console.ReadLine();
             string helpLower = userFavoriteColor.ToLower();
 
@@ -43,11 +43,57 @@ namespace Project_1
 
             else
             {
-                Console.WriteLine("Proceed to the next question.");
+                Console.WriteLine("Thanks for your answer! Proceed to the next question.");
             }
 
             Console.WriteLine("User, please enter how many siblings you have as a digit.");
             int userSiblings = int.Parse(Console.ReadLine());
+
+
+
+            //Part 2 Formatting. Taking user information from Part 1 to complete the following:
+
+            //if (int userAge % 0) ;
+
+            //{
+            //    string userRetiresIn = "31 years";
+            //}
+            
+            //else
+            //{
+            //    string userRetiresIn = "30 years";
+            //}
+
+            //siblings functions
+            if (userSiblings == 0)
+            {
+                string userVacationHome = "Geneva-On-The-Lake";
+            }
+
+            else if (userSiblings == 1)
+            {
+                string userVacationHome = "Nantucket";
+            }
+
+            else if (userSiblings == 2)
+            {
+                string userVacationHome = "Outer Banks";
+            }
+
+            else if (userSiblings == 3)
+            {
+                string userVacationHome = "Costa Rica";
+            }
+
+            else if (userSiblings >3)
+            {
+                string userVacationHome = "Orlando";
+            }
+
+            else
+            {
+                string userVacationHome = "Skid Row";
+            }
 
         }
     }
