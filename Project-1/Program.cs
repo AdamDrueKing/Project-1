@@ -52,7 +52,15 @@ namespace Project_1
 
 
             //Part 2 Formatting. Nothing to print in this part. Taking user information from Part 1 to complete the following:
-
+            //Variables:  userAge
+            //string userRetiresIn = int.Parse(Console.ReadLine()); 
+            //    //userSiblings
+            //    string userVacationHome = 
+            //    //userFavoriteColor
+            //    string userTransportation = 
+            //    //userBirthMonth
+            //    string userFundsInBank = 
+             
             if (userAge % 2 == 0) 
 
             {
@@ -131,35 +139,54 @@ namespace Project_1
             }
 
 
-            if (userBirthMonth >= 1 && userBirthMonth <= 4)
-            {
-                string userFundsInBank = "$10,000";
-            }
+            //if (userBirthMonth >= 1 && userBirthMonth <= 4)
+            //{
+            //    string userFundsInBank = "$10,000";
+            //}
 
-            else if (userBirthMonth >= 5 && userBirthMonth <= 8 )
-            {
-                string userFundsInBank = "$1,000,000,000";
-            }
+            //else if (userBirthMonth >= 5 && userBirthMonth <= 8 )
+            //{
+            //    string userFundsInBank = "$1,000,000,000";
+            //}
 
-            else if (userBirthMonth >= 9 && userBirthMonth <= 12 )
-            {
-                string userFundsInBank = "$1,000,000";
-            }
+            //else if (userBirthMonth >= 9 && userBirthMonth <= 12 )
+            //{
+            //    string userFundsInBank = "$1,000,000";
+            //}
 
-            else
-            {
-                string userFundsInBank = "$0.00";
-            }
+            //else
+            //{
+            //    string userFundsInBank = "$0.00";
+            //}
+
+            //string userBirthMonth = 1;
+            //switch (userBirthMonth >= 1 && userBirthMonth <= 4)
+            //{
+            //    case 1:
+            //        Console.WriteLine("You'll retire with $10,000 in the bank.");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("You'll retire with $1,000,000,000 in the bank.");
+            //        break;
+
+            //}
 
             // Part 3. Fortune Telling
 
-            Console.WriteLine("Thank you for your answers. Your fortune is being tabulated.");
+            Console.WriteLine("Thank you for your answers. Your fortune is being tabulated...");
 
 
-            
-            Console.WriteLine(userFirstName + userLastName);
 
-            Console.WriteLine("You will retire in");
+            Console.WriteLine(userFirstName + userLastName + "You will retire in" + userAge + "with" + userBirthMonth + "and a vacation home in" + userSiblings + "and a" + userFavoriteColor + "car.");
+
+
+            // Having trouble figuring out how to definte the below variables in line with user data.
+
+            //Console.WriteLine("You will retire in" + userAge + "with" + userBirthMonth + "and a vacation home in" + userSiblings + "and a" + userFavoriteColor + "car.");
+
+
+            //Console.WriteLine("You will retire in" + userRetiresIn + "with" + userFundsInBank + "and a vacation home in" + userVacationHome + "and a" + userTransportation + "car.")*/;
+
             //Console.WriteLine(Console.ReadLine(userRetiresIn);
             //Console.WriteLine("With" + userFundsInBank);
             //Console.WriteLine("A vacation home in" + userVacationHome);
